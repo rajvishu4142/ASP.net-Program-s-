@@ -1,0 +1,84 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style3
+        {
+            width: 139px;
+            height: 26px;
+        }
+        .style5
+        {
+            width: 1110px;
+            height: 26px;
+        }
+        .style4
+        {
+            height: 397px;
+            width: 139px;
+        }
+        .style6
+        {
+            height: 397px;
+            width: 1110px;
+        }
+        .style2
+        {
+            height: 397px;
+        }
+        .style7
+        {
+            height: 26px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="style1">
+            <tr>
+                <td colspan="3">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label1" runat="server" Font-Size="X-Large" 
+                        Text="EMPLOYEE DETAIL PAGE"></asp:Label>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style3">
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx">Home</asp:HyperLink>
+                </td>
+                <td class="style5">
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/EmployeeData.aspx">Employees</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label2" runat="server" Text="Hey "></asp:Label>
+                    <asp:Label ID="Label3" runat="server" Text="Your Name"></asp:Label>
+                </td>
+                <td class="style7">
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Login.aspx">LogOut</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td class="style4">
+                </td>
+                <td class="style6">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td class="style2">
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,97 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            height: 76px;
+            width: 734px;
+        }
+        .style3
+        {
+            height: 76px;
+            width: 386px;
+        }
+        .style4
+        {
+            width: 386px;
+        }
+        .style5
+        {
+            height: 48px;
+            width: 386px;
+        }
+        .style6
+        {
+            height: 48px;
+            width: 734px;
+        }
+        .style7
+        {
+            width: 734px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="style1">
+            <tr>
+                <td class="style3">
+                    <asp:LinkButton ID="LinkButton1" runat="server">Log Out</asp:LinkButton>
+                </td>
+                <td class="style2">
+                    <asp:Label ID="Label1" runat="server" BackColor="#FF99FF" Font-Bold="True" 
+                        Font-Size="X-Large" Text="Blood Donation Site"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label2" runat="server" Text="Welcome"></asp:Label>
+&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label3" runat="server" Text="Donar Name"></asp:Label>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td class="style5">
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/SearchPage.aspx">Search</asp:HyperLink>
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/EditProfile.aspx">Edit 
+                    Profile</asp:HyperLink>
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="HyperLink3" runat="server" 
+                        NavigateUrl="~/ChangePassword.aspx">Change Password</asp:HyperLink>
+                </td>
+                <td class="style6">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="style4">
+                    &nbsp;</td>
+                <td class="style7">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style4">
+                    &nbsp;</td>
+                <td class="style7">
+                    &nbsp;</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
